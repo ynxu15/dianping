@@ -1,0 +1,10 @@
+shopLoc/*
+test123.txt
+dianping/test123.txt
+*.pyc
+dianping/*.json
+dianping/shopRecom/*
+dianping/shopPage/*
+dianping/shopLoc/*
+dianping/des/*
+
