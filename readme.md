@@ -1,6 +1,6 @@
 This is the python 2.7 version scrapy project,basic is write a python spider to get app infor from appstore.huawei.com website. Store it into a json format file .refre to https://www.youtube.com/watch?v=qVGU1Nx_jYA for more and basic understanding.
 
-###using scrapy
+### using scrapy
 Default structure of Scrapy projects
 Before delving into the command-line tool and its sub-commands, let’s first understand the directory structure of a Scrapy project.
 
@@ -21,7 +21,7 @@ The directory where the scrapy.cfg file resides is known as the project root dir
 
 for more understanding http://scrapy.readthedocs.org/en/latest/topics/commands.html#topics-project-structure
 
-###using splash
+### using splash
 Splash is a lightweight headless browser that works as an HTTP API. Guess what, it's also Open Source. With Splash, you can easily render Javascript pages and then scrapy them!
 There's a great and detailed tutorial about integrating Splash and ScrapyJs at Scrapinghub blog. After configuring everything, you can trigger the following requests:
 
@@ -34,7 +34,7 @@ def parse_locations(self, response):
                 })
 Adding splash directive makes the script to call Splash, through render.html API and execute all Javascript of the crawled page.
 
-###using user-agent
+### using user-agent
 user-agent working like a tag of the browsers ,change it randomly can hide your info to the server:
 two steps: 
          1. edit the settings.py 
@@ -54,7 +54,7 @@ class RotateUserAgentMiddleware(UserAgentMiddleware):
     user_agent_list = [......]
 
 
-###using http-proxy
+### using http-proxy
 Working like the user-agent 
 class RandomProxyMiddleware(HttpProxyMiddleware):
     def __init__(self, proxy_ip=''):
@@ -72,7 +72,7 @@ class RandomProxyMiddleware(HttpProxyMiddleware):
 get the proxy your can refer to http://spys.ru/en/http-proxy-list/
 
 
-##hide host for server
+## hide host for server
 
 install docker + spash to handle with the js rendering service `:1
 
@@ -108,7 +108,7 @@ two ways for server block request ip
 2. random proxy ip
 
 
-##understanding deploy
+## understanding deploy
 
 here the deploy means that you can deploy your project and your spiders to the deamon server scrapyd ,just like you can deploy your website to the tomcat servers.
 
