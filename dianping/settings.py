@@ -29,7 +29,7 @@ NEWSPIDER_MODULE = 'dianping.spiders'
 #CONCURRENT_REQUESTS_PER_DOMAIN=16
 #CONCURRENT_REQUESTS_PER_IP=16
 
-CONCURRENT_REQUESTS = 100
+CONCURRENT_REQUESTS = 500
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED=False
@@ -43,7 +43,7 @@ CONCURRENT_REQUESTS = 100
 #   'Accept-Language': 'en',
 #}
 
-DOWNLOAD_TIMEOUT = 120
+DOWNLOAD_TIMEOUT = 50
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
